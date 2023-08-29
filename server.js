@@ -26,8 +26,6 @@ app.get("/magic/:quote", (request, response) => {
     response.send(`<h1>${request.params.quote}</h1> <h1>${quotes[randomElement]}</h1>`)
 })
 
-
-
 app.listen(3000, function() {
     console.log("Listening on port 3000")
 })
